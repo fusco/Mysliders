@@ -87,3 +87,7 @@ Il faut encore modifier la vue index du frontend pour quelle corresponde à ce q
 
 
 
+# Astuce 
+Ça devait attendre le prochain exercice, mais il est possible de vous affranchir des étapes #7 #8 #9 en utilisant la gem ```rails-admin-scaffold``` disponible [ici](https://github.com/dhampik/rails-admin-scaffold)
+
+Ça simplifie la vie, mais attention, ça formatte salement le fichiers ```routes.rb```
