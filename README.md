@@ -52,7 +52,7 @@ pensez à regarder au ```rake routes```
  $ rake db create
  $ rake db:migrate
  ```
-### 7 / Midification du model ```slide```
+### 7 / Modification du model ```slide```
 pour ajouter les validations pour ```picture```  
 et le reste du model
 
