@@ -1,4 +1,4 @@
-<%= form_for([:admin,@slide]) do |f| %>
+<%= form_for([:admin,@slide], html: { multipart: true }) do |f| %>
   <% if @slide.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@slide.errors.count, "error") %> prohibited this slide from being saved:</h2>
@@ -14,6 +14,10 @@
   <div class="field">
     <%= f.label :name %><br>
     <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :picture %><br>
+    <%= f.file_field :picture %>
   </div>
   <div class="field">
     <%= f.label :desc %><br>

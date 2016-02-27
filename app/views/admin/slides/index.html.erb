@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <th>Picture</th>
       <th>Name</th>
       <th>Desc</th>
       <th>Author</th>
@@ -15,9 +16,10 @@
   <tbody>
     <% @slides.each do |slide| %>
       <tr>
+        <td><%= image_tag slide.picture.url(:thumb) %></td>
         <td><%= slide.name %></td>
-        <td><%= slide.desc %></td>
-        <td><%= slide.author %></td>
+        <td><%= slide.desc.html_safe %></td>
+        <td><%= slide.author.html_safe %></td>
         <td><%= link_to 'Show', admin_slide_path(slide) %></td>
         <td><%= link_to 'Edit', edit_admin_slide_path(slide) %></td>
         <td><%= link_to 'Destroy', admin_slide_path(slide), method: :delete, data: { confirm: 'Are you sure?' } %></td>
