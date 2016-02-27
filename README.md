@@ -80,4 +80,10 @@ Il faut modifier les vues et le controller afin que ```:picture``` soit pris en 
 
 
 > c'est presque fini
-> il faut encore modifier la vue index du frontend pour quelle corresponde à ce qui est demandé.
+
+### 13 / Vue ```index``` du frontend
+
+Il faut encore modifier la vue index du frontend pour quelle corresponde à ce qui est demandé.
+
+
+
