@@ -1,2 +1,2 @@
-module SlidesHelper
+module Admin::SlidesHelper
 end
