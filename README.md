@@ -91,3 +91,20 @@ Il faut encore modifier la vue index du frontend pour quelle corresponde à ce q
 Ça devait attendre le prochain exercice, mais il est possible de vous affranchir des étapes #7 #8 #9 en utilisant la gem ```rails-admin-scaffold``` disponible [ici](https://github.com/dhampik/rails-admin-scaffold)
 
 Ça simplifie la vie, mais attention, ça formatte salement le fichiers ```routes.rb```
+
+
+----------------------------------
+## Continuation
+----------------------------------
+
+### 14 / Créer 3 champs   ( créer migration) 
+ - ```published```  (boolean)
+ - ```published_from``` (datetime)
+ - ```published_to``` (datetime)
+
+### 15 / Modifier les ```views admin``` et le ```admin::controller```
+ 
+### 16 / Modifier controller frontend, vue index pour tenir compte des 3 nouveaux champs 
+
+Le but est de filtrer le champ ```published``` pour afficher que les slides choisis
+et de les afficher si la date à l'instant T est comprise dans ```published_from``` et ```published_to```
