@@ -27,6 +27,18 @@
     <%= f.label :author %><br>
     <%= f.text_area :author %>
   </div>
+  <div class="field">
+    <%= f.label :published %><br>
+    <%= f.check_box :published %>
+  </div>
+  <div class="field">
+    <%= f.label :published_from %><br>
+    <%= f.date_field :published_from %>
+  </div>
+  <div class="field">
+    <%= f.label :published_to %><br>
+    <%= f.date_field :published_to %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>

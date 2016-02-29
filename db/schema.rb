@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160227004327) do
+ActiveRecord::Schema.define(version: 20160229174605) do
 
   create_table "slides", force: :cascade do |t|
     t.string   "name"
@@ -23,6 +23,9 @@ ActiveRecord::Schema.define(version: 20160227004327) do
     t.string   "picture_content_type"
     t.integer  "picture_file_size"
     t.datetime "picture_updated_at"
+    t.boolean  "published"
+    t.datetime "published_from"
+    t.datetime "published_to"
   end
 
 end
