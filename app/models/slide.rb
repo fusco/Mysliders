@@ -20,4 +20,10 @@ class Slide < ActiveRecord::Base
   # on vérifie que les 4 champs seront bien rempli
   validates :name, :desc, :author, :picture, presence: true
 
+  # on crée 2 scopes pour simplifier la synthaxe du controller
+  # on recherche que les publication à 'true'
+  scope :publication, -> { where(published: true) }
+  # on cherche les publications dont la date du jour est comprise dans les dates de publication
+  scope :min_publication, -> { where('DateTime(published_from) < ? ', DateTime.now ) }
+  scope :max_publication, -> { where('DateTime(published_to) > ?', DateTime.now ) }
 end
