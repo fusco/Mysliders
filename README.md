@@ -49,7 +49,7 @@ pensez à regarder au ```rake routes```
 ### 6 / Creation et migration de la base de données
 
  ```bash
- $ rake db create
+ $ rake db:create
  $ rake db:migrate
  ```
 ### 7 / Modification du model ```slide```
