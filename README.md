@@ -93,18 +93,26 @@ Il faut encore modifier la vue index du frontend pour quelle corresponde à ce q
 Ça simplifie la vie, mais attention, ça formatte salement le fichiers ```routes.rb```
 
 
-----------------------------------
-## Continuation
-----------------------------------
 
-### 14 / Créer 3 champs   ( créer migration) 
+### 14 / Créer 3 champs   ( créer migration) [commit ](https://github.com/fusco/Mysliders/commit/41eee4272254c480553efea8ff7fb068fcec7c2e)
  - ```published```  (boolean)
  - ```published_from``` (datetime)
  - ```published_to``` (datetime)
 
-### 15 / Modifier les ```views admin``` et le ```admin::controller```
+### 15 / Modifier les ```views admin``` et le ```admin::controller```   [commit](https://github.com/fusco/Mysliders/commit/d7c2eeff8f89d07efeb0ed088d13c75df7a087bf)
  
-### 16 / Modifier controller frontend, vue index pour tenir compte des 3 nouveaux champs 
+### 16 / Modifier controller frontend, vue index pour tenir compte des 3 nouveaux champs [commit](https://github.com/fusco/Mysliders/commit/9a87f3bed72608644fa310521d531c5e8d2581fb)
 
 Le but est de filtrer le champ ```published``` pour afficher que les slides choisis
 et de les afficher si la date à l'instant T est comprise dans ```published_from``` et ```published_to```
+
+
+----------------------------------
+## Continuation
+----------------------------------
+### 17 / Installer la [gem sorcery](https://github.com/NoamB/sorcery)
+
+### 18 / Configurer sorcery pour utiliser un model User 
+
+### 19 / Configurer un champ admin
+cf documentation de la [gem](https://github.com/NoamB/sorcery)
